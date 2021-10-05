@@ -1,11 +1,14 @@
 
-
 function strictEquals(a,b){
   let result= (Object.is(a, b));
-  return result;
+  console.log(result);
+
+  if(isNaN (a)|| isNaN(b)){
+   result = false;
+  }
 
 }
 
-strictEquals(1,1);
+
 
 
