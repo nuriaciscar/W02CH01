@@ -1,12 +1,15 @@
 
 function strictEquals(a,b){
   let result= (Object.is(a, b));
-  console.log(result);
-
+  
+  if(a/-b || -a/b){
+   result = true;
+  }
   if(isNaN (a)|| isNaN(b)){
    result = false;
   }
 
+return result;
 }
 
 
